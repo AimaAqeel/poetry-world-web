@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <!--- Add Heading --->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry World | Poetry World Store</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="#Home" class="logo">Poetry World</a>
+        <div class="nav-links">
+            <a href="#Home" class="nav-link">HOME</a>
+            <a href="#New-Arrivals" class="nav-link">New-Arrivals</a>
+            <a href="#Book" class="nav-link">BOOKS</a>
+            <a href="#Famous" class="nav-link">FAMOUS</a>
+            <a href="#Contact" class="nav-link">CONTACT</a>
+        </div>
+        <div class="nav-buttons" id="authButtons">
+            <a href="login.html" class="nav-btn login">Login</a>
+            <a href="signup.html" class="nav-btn signup">Sign Up</a>
+            <button id="logout-button" onclick="logout()" style="display: none;">Logout</button>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="Home" class="Home">
+        <div class="Home-content" data-aos="fade-up">
+            <h1 class="Home-title">Welcome to Poetry World</h1>
+            <p class="Home-subtitle">DREAMY VIBES</p>
+            <a href="#Contact" class="cta-btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- NEW ARRIVALS Section -->
+    <section id="New-Arrivals" class="New-Arrivals">
+        <h2 class="New-Arrivals-title" data-aos="fade-up">NEW ARRIVALS</h2>
+        <div class="New-Arrivals-content">
+            <div class="New-Arrivals-text" data-aos="fade-right">
+                <p>Bang-e-Dra, (The Call of the Marching Bell) is a celebrated Urdu poetry book by Allama Muhammad Iqbal, first published in 1924. </p>
+                <br>
+                <p>It's a masterpiece of Iqbal's spiritual journey, focusing on self-awareness, Muslim identity, and social awakening. Divided into three parts, it offers nostalgia, philosophical thoughts, and a call to action for timeless inspiration....</p>
+            </div>
+            <img src="assets/Bang-e-Dra.png" alt="Flower arrangement" class="New-Arrivals-image" data-aos="fade-left">
+        </div>
+    </section>
+
+   <!-- Famous -->
+   <section id="Famous" class="Famous">
+    <h2 class="Famous-title" data-aos="fade-up">FAMOUS POETRY BOOKS</h2>
+    <div class="Famous-grid">
+      <div class="Famous-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="Famous-img">
+          <img src="assets/punk57.png" alt="Punk57" />
+        </div>
+        <h3>punk57</h3>
+        <p>
+            Punk 57 by Penelope Douglas is a gripping enemies-to-lovers romance about two pen pals whose lives collide when their secret identities are revealed</p>
+      </div>
+      <div class="Famous-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="Famous-img">
+          <img src="assets/my foolish heart.png" alt="My foolish heart" />
+        </div>
+        <h3>My foolish heart</h3>
+        <p>My Foolish Heart is a heartfelt tale of love, loss, and self-discovery, exploring the complexities of human emotions.</p>
+      </div>
+      <div class="Famous-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="Famous-img">
+          <img src="assets/leaves of grass.png" alt="Leaves of grass" />
+        </div>
+        <h3>Leaves of grass</h3>
+        <p>Leaves of Grass by Walt Whitman is a groundbreaking poetry collection celebrating individuality, nature, and the human spirit.</p>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Book Section -->
+    <section id="Book" class="Book">
+      <h2 class="Book-title" data-aos="fade-up">OUR COLLECTIONS</h2>
+      
+      <div class="filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Ana Huang">Ana Huang</button>
+          <button class="filter-btn" data-filter="Pablo Neruda">Pablo Neruda</button>
+          <button class="filter-btn" data-filter="Twisted">Twisted</button>
+      </div>
+  
+      <div class="Book-grid">
+          <!-- Book-1 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Ana Huang">
+              <div class="Book-badge">Best Seller</div>
+              <img src="assets/king of envy.png" alt="Ana Huang" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">King Of Envy</h3>
+                  <p class="Book-description">King of Envy is a gripping tale of ambition, betrayal, and power, where desires clash and secrets ignite dangerous rivalries.</p>
+                  <p class="Book-price">$100.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+  
+          <!-- Book-2 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Ana Huang">
+              <img src="assets/king of greed.png" alt="Ana Huang" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">King Of Greed</h3>
+                  <p class="Book-description">King of greed is gripping tale of ambition, power, and betrayal, where desires consume and empires crumble.</p>
+                  <p class="Book-price">$79.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+  
+          <!-- Book-3 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Ana Huang">
+              <div class="Book-badge">New</div>
+              <img src="assets/king of pride.png" alt="Ana Huang" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">King Of Pride</h3>
+                  <p class="Book-description">King of Pride is a steamy romance novel by Ana Huang, exploring ambition, love, and vulnerability as two opposites collide in a world of wealth and secrets..</p>
+                  <p class="Book-price">$89.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+  
+          <!-- Book-4 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Ana Huang">
+              <img src="assets/king of sloth.png" alt="Ana Huang" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">King Of Sloth</h3>
+                  <p class="Book-description">King of Sloth is a tale of unexpected heroism, where a seemingly lazy protagonist rises to greatness through wit, resilience, and hidden strength.</p>
+                  <p class="Book-price">$59.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+  
+          <!-- Book-5 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Ana Huang">
+              <img src="assets/king of wrath.png" alt="Ana Huang" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">King Of Warth</h3>
+                  <p class="Book-description">King of Wrath by Ana Huang is a steamy romance about a fiery billionaire and a strong-willed woman entangled in a fake engagement that blurs the line between duty and desire.</p>
+                  <p class="Book-price">$79.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-6 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Twisted">
+              <img src="assets/T-games.png" alt="Twisted" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Twisted Games</h3>
+                  <p class="Book-description">Twisted Games by Ana Huang is a steamy romance about a strong-willed princess and her brooding bodyguard, navigating forbidden love and royal duty.</p>
+                  <p class="Book-price">$39.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-7 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Twisted ">
+              <img src="assets/T-hate.png" alt="Twisted" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Twisted Hate</h3>
+                  <p class="Book-description">Twisted Hate by Ana Huang is a steamy enemies-to-lovers romance filled with passion, banter, and emotional twis.</p>
+                  <p class="Book-price">$59.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-8 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Twisted">
+              <img src="assets/T-lies.png" alt="Twisted" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Twisted Lies</h3>
+                  <p class="Book-description">
+                    Twisted Lies by Ana Huang is a gripping romance filled with secrets, passion, and unexpected twists, where love and lies intertwine in a dangerous game..</p>
+                  <p class="Book-price">$59.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-9 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Twisted">
+              <img src="assets/T-love.png" alt="Twisted" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Twisted Love</h3>
+                  <p class="Book-description">
+                    Twisted Lies by Ana Huang is a gripping romance filled with secrets, passion, and unexpected twists, where love and lies intertwine in a dangerous game.</p>
+                  <p class="Book-price">$29.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>  
+              </div>
+          </div>
+          <!-- Book-10 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Pablo Neruda">
+              <img src="assets/my foolish heart.png" alt="Pablo Neruda" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">My Foolish Heart</h3>
+                  <p class="Book-description">My Foolish Heart is a heartfelt tale of love, vulnerability, and the complexities of following one’s emotions..</p>
+                  <p class="Book-price">$99.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-11 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Pablo Neruda">
+              <img src="assets/extravagaria.png" alt="Pablo Neruda" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Extravagaria</h3>
+                  <p class="Book-description">
+                    Extravagaria by Pablo Neruda is a poetic masterpiece exploring themes of love, nature, and self-reflection with simplicity and profound beauty.</p>
+                  <p class="Book-price">$49.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+          <!-- Book-12 -->
+          <div class="Book-card" data-aos="fade-up" data-category="Pablo Neruda">
+              <img src="assets/fully empowered.png" alt="Pablo Neruda" class="Book-image">
+              <div class="Book-content">
+                  <h3 class="Book-title">Fully Empowered</h3>
+                  <p class="Book-description">
+                    Fully Empowered by Pablo Neruda is a profound poetry collection celebrating life, love, and the interconnectedness of humanity and nature.</p>
+                  <p class="Book-price">$49.99</p>
+                  <a href="#" class="Book-btn">Add to Cart</a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="section Contact">
+        <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+        <div class="Contact-content">
+            <form class="Contact-form" data-aos="fade-up">
+                <input type="text" placeholder="Your Name" class="form-input" required>
+                <input type="email" placeholder="Your Email" class="form-input" required>
+                <textarea placeholder="Your Message" class="form-input" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+          <!-- About Section -->
+          <div class="footer-section">
+              <h3 class="footer-title">About Poetry World</h3>
+              <p>Poetry World: A haven for poets and poetry lovers to explore, share, and celebrate the beauty of words.</p>
+              <div class="footer-social">
+                  <a href="#" class="social-link">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="social-link">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                          <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/>
+                          <circle cx="17.5" cy="6.5" r="1.5"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="social-link">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="social-link">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                          <rect x="2" y="9" width="4" height="12"/>
+                          <circle cx="4" cy="4" r="2"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+  
+          <!-- Quick Links -->
+          <div class="footer-section">
+              <h3 class="footer-title">Quick Links</h3>
+              <a href="#About" class="footer-link">About Us</a>
+              <a href="#Famous" class="footer-link">Famous</a>
+              <a href="#Books" class="footer-link">Books</a>
+              <a href="#Contact" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+          </div>
+  
+          <!-- Contact Info -->
+          <div class="footer-section">
+              <h3 class="footer-title">Contact Us</h3>
+              <a href="tel:+1234667890" class="footer-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  (205) 456-7890
+              </a>
+              <a href="mailto:info@PoetWorld.com" class="footer-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                  info@PoetrtWorld.com
+              </a>
+              <a href="#" class="footer-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  205 Flower Street, Poet Soul
+              </a>
+          </div>
+  
+          <!-- Newsletter -->
+          <div class="footer-section">
+              <h3 class="footer-title">Newsletter</h3>
+              <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+              <form class="newsletter-form" onsubmit="event.preventDefault();">
+                  <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                  <button type="submit" class="newsletter-btn">Subscribe</button>
+              </form>
+          </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+          <p>&copy; 2025 POETRY WORLD. All rights reserved.</p>
+          <div class="footer-payments">
+              <div class="payment-icon">💳</div>
+              <div class="payment-icon">💵</div>
+              <div class="payment-icon">🪙</div>
+              <div class="payment-icon">💰</div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
